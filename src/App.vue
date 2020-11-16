@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div>
-      <h1>京东头条</h1>
+      <!-- <h1>京东头条</h1> -->
     </div>
     <router-view />
   </div>

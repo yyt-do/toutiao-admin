@@ -1,12 +1,13 @@
 <template>
   <div>
     <el-menu
+      collapse-transition
       background-color="#0a1f33"
       text-color="#fff"
       active-text-color="#1E90FF"
-      :router="false"
+      router
       :collapse="isCollapse"
-      default-active="/home"
+      :default-active="$route.path"
     >
       <el-menu-item index="/home">
         <i class="el-icon-s-home"></i>
@@ -46,6 +47,7 @@ export default {
   data() {
     return {
       // iscollapse: true
+      activePath: ''
     }
   }
 }

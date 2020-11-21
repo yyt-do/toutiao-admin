@@ -5,6 +5,7 @@ import Home from '@/views/home/home'
 import Layout from '@/views/layout/layout'
 import Article from '@/views/article/article'
 import Publish from '@/views/publish/publish'
+import Image from '@/views/image/image'
 
 Vue.use(VueRouter)
 // 路由配置
@@ -23,7 +24,9 @@ const routes = [
     children: [
       { path: '/home', component: Home },
       { path: '/article', component: Article },
-      { path: '/publish', component: Publish }
+      { path: '/publish', component: Publish },
+      { path: '/img', component: Image }
+
     ]
   }
 ]

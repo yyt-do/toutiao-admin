@@ -101,7 +101,7 @@
               type="primary"
               icon="el-icon-edit"
               size="mini"
-              @click="showEditDialog(scope.row.id)"
+              @click="$router.push('/publish?id=' + scope.row.id)"
             ></el-button>
             <!-- 删除 -->
             <el-button

@@ -32,16 +32,16 @@ export default {
   name: 'LoginIndex',
   data() {
     // 验证手机号的规则
-    var checkMobile = (rule, value, cb) => {
-      // 验证手机号的正则表达式
-      const regMobile = /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/
+    // var checkMobile = (rule, value, cb) => {
+    //   // 验证手机号的正则表达式
+    //   const regMobile = /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/
 
-      if (regMobile.test(value)) {
-        return cb()
-      }
+    //   if (regMobile.test(value)) {
+    //     return cb()
+    //   }
 
-      cb(new Error('请输入合法的手机号'))
-    }
+    //   cb(new Error('请输入合法的手机号'))
+    // }
     return {
       checked: true,
       loginloading: false,
@@ -50,10 +50,10 @@ export default {
         code: '246810'
       },
       rules: {
-        mobile: [
-          { required: true, message: '请输入手机号', trigger: 'blur' },
-          { validator: checkMobile, trigger: 'blur' }
-        ]
+        // mobile: [
+        //   { required: true, message: '请输入手机号', trigger: 'blur' },
+        //   { validator: checkMobile, trigger: 'blur' }
+        // ]
         // code: [
         //   { required: true, message: '请输入验证码', trigger: 'change' },
         //   { type: 'number', message: '验证码不正确' }

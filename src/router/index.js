@@ -4,6 +4,7 @@ import Login from '@/views/login'
 import Home from '@/views/home/home'
 import Layout from '@/views/layout/layout'
 import Article from '@/views/article/article'
+import Publish from '@/views/publish/publish'
 
 Vue.use(VueRouter)
 // 路由配置
@@ -21,8 +22,8 @@ const routes = [
     redirect: '/home',
     children: [
       { path: '/home', component: Home },
-      { path: '/article', component: Article }
-
+      { path: '/article', component: Article },
+      { path: '/publish', component: Publish }
     ]
   }
 ]

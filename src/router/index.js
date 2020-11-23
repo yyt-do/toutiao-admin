@@ -6,6 +6,7 @@ import Layout from '@/views/layout/layout'
 import Article from '@/views/article/article'
 import Publish from '@/views/publish/publish'
 import Image from '@/views/image/image'
+import Comment from '@/views/comment/comment'
 
 Vue.use(VueRouter)
 // 路由配置
@@ -25,7 +26,8 @@ const routes = [
       { path: '/home', component: Home },
       { path: '/article', component: Article },
       { path: '/publish', component: Publish },
-      { path: '/img', component: Image }
+      { path: '/img', component: Image },
+      { path: '/comment', component: Comment }
 
     ]
   }
